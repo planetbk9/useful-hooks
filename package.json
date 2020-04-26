@@ -1,0 +1,24 @@
+{
+  "name": "useful-hooks",
+  "version": "0.0.1",
+  "description": "React hooks library",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planetbk9/useful-hooks.git"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "library"
+  ],
+  "author": "kevin.koo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/planetbk9/useful-hooks/issues"
+  },
+  "homepage": "https://github.com/planetbk9/useful-hooks#readme"
+}
