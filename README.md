@@ -1,7 +1,7 @@
 # React hooks
 
-1. usePrevState [./src/usePrevState]
-   description: refer to previous state
+1. [usePrevState](./src/usePrevState.ts) \
+   description: refer to previous state \
    usage:
 
 ```ts
