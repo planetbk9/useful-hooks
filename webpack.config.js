@@ -7,6 +7,7 @@ module.exports = {
   devServer: {
     contentBase: [path.join(__dirname, 'dist')],
     watchContentBase: true,
+    writeToDisk: true,
     compress: true,
     port: 9009,
     hot: true,
@@ -24,6 +25,7 @@ module.exports = {
   output: {
     filename: 'dist.js',
     path: path.resolve(__dirname, 'dist'),
+    libraryTarget: 'umd',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
