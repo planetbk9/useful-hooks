@@ -6,6 +6,6 @@ Display overlowing texts as ...
 
 ```ts
 // Displaying ... for overflow texts
-const { isOverflow, setIsOverflow } = useDotDotDot(dom);
+const { isOverflow, setIsOverflow } = useDotDotDot(ref);
 setIsOverflow(false); // Display full texts
 ```

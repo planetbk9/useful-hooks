@@ -11,7 +11,7 @@ All libraries are build based on es6 module so it should be tree-shaked if you i
 Usage:
 
 ```ts
-import { usePrevState, useWindowSize } from "useful-hooks";
+import { usePrevState, useWindowSize } from 'useful-hooks';
 ```
 
 ## Libraries
@@ -32,14 +32,29 @@ const [newState] = useState<State>({ id: 0, count: 0 });
 const { id: prevId, count: prevCount } = prevState;
 const { id: newId, count: newCount } = newState;
 
-console.log("prevState: ", prevId, prevCount);
-console.log("newState: ", newId, newCount);
+console.log('prevState: ', prevId, prevCount);
+console.log('newState: ', newId, newCount);
 ```
 
 2. useWindowSize(TBD)
 
 3. useDnd(TBD)
 
-4. useDotDotDot
+4. useDotDotDot [.src/useDotDotDot/index.ts]
+   description: convert overflowing texts into ... regardless of browsers(including ie)
+   usage:
+
+```ts
+const ref = useRef(null);
+
+const { isOverflow, setIsOverflow} = useDotDotDot(ref);
+setIsOverflow(false); // Display full texts
+
+return (
+  <div ref={ref}>
+    {...}
+  </div>
+);
+```
 
 ...
